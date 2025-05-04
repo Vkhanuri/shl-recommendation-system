@@ -15,7 +15,7 @@ This is a Flask-based API that recommends SHL assessments based on a given job d
 
 Navigate to your desired folder and run:
 
-```bash
+bash
 cd shl-recommendation-system
 
 ### 2. Create and activate a virtual environment
@@ -24,16 +24,19 @@ Copy
 Edit
 python -m venv venv
 .\venv\Scripts\activate
+
 ### 3. Install dependencies
 bash
 Copy
 Edit
 pip install flask
+
 ### 4. Run the Flask app
 bash
 Copy
 Edit
 python app.py
+
 ### 5. Test the API with Postman
 Method: POST
 
