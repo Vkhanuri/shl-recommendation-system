@@ -18,23 +18,23 @@ Navigate to your desired folder and run:
 ```bash
 cd shl-recommendation-system
 
-2. Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 bash
 Copy
 Edit
 python -m venv venv
 .\venv\Scripts\activate
-3. Install dependencies
+### 3. Install dependencies
 bash
 Copy
 Edit
 pip install flask
-4. Run the Flask app
+### 4. Run the Flask app
 bash
 Copy
 Edit
 python app.py
-5. Test the API with Postman
+### 5. Test the API with Postman
 Method: POST
 
 URL: http://127.0.0.1:5000/recommendations
@@ -69,7 +69,7 @@ Edit
     }
   ]
 }
-📁 Project Structure
+### 📁 Project Structure
 perl
 Copy
 Edit
