@@ -15,7 +15,7 @@ This is a Flask-based API that recommends SHL assessments based on a given job d
 
 Navigate to your desired folder and run:
 
-bash
+```bash
 cd shl-recommendation-system
 
 ### 2. Create and activate a virtual environment
@@ -39,34 +39,33 @@ python app.py
 
 ### 5. Test the API with Postman
 Method: POST
-
 URL: http://127.0.0.1:5000/recommendations
 
 Headers:
-
-Content-Type: application/json
+Key: Content-Type, Value: application/json
 
 Body (raw JSON):
-
 json
 Copy
 Edit
 {
   "job_description": "Software engineer with expertise in Python and JavaScript"
 }
+
 ✅ Example Response:
+
 json
 Copy
 Edit
 {
   "recommendations": [
     {
-      "assessment": "Assessment 1",
+      "assessment": "Python Coding Test",
       "category": "Technical",
       "level": "Intermediate"
     },
     {
-      "assessment": "Assessment 2",
+      "assessment": "Leadership & Communication",
       "category": "Behavioral",
       "level": "Advanced"
     }
@@ -74,7 +73,7 @@ Edit
 }
 
 ### 📁 Project Structure
-perl
+plaintext
 Copy
 Edit
 shl-recommendation-system/
@@ -82,3 +81,14 @@ shl-recommendation-system/
 ├── app.py
 ├── README.md
 ├── venv/
+pgsql
+Copy
+Edit
+
+This version includes all the necessary steps to clone the repository, set up the virtual environment, install dependencies, run the app, and test the API with Postman.
+
+
+
+
+
+
