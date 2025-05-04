@@ -45,3 +45,7 @@ def get_shl_recommendations(job_description):
         })
     return recommendations
 
+# Ensure the app runs on the appropriate host and port for deployment
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # Use PORT env var if set
+    app.run(host='0.0.0.0', port=port, debug=True)
