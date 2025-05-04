@@ -1,7 +1,11 @@
 from flask import Flask, request, jsonify
-import os
 
 app = Flask(__name__)
+
+# Define the root route to return a message
+@app.route('/')
+def home():
+    return "The SHL Recommendation System is live!"
 
 # Define the recommendation route
 @app.route('/recommendations', methods=['POST'])
@@ -46,7 +50,6 @@ def get_shl_recommendations(job_description):
         })
     return recommendations
 
-# Ensure the app runs on the appropriate host and port for deployment
+# Ensure the app runs when the script is executed directly
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))  # Use PORT env var if set
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(debug=True, host="0.0.0.0", port=10000)
